@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex002</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+  </head>
+  <body>
+    <h2>Teste de JavaScript</h2>
+    <script>
+      function pl(){
+        document.write("<br>")
+      };
+      //GLOBAL VARIABLE
+      ano = 2023;
+      mediaIdade = (18 + 21 + 22) / 3;
+      nome = "Charles Romeu PAPA";
+      idade = 18;
+      /*MOSTRAR DADO DO PROMPT OU CONFIRM NO PROXIMO ALERT
+      dado = window.prompt("Quantos anos vc tem?")
+      alert(dado)
+      */
+      document.write("Giovanni nasceu em ", ano - 18);
+      pl();
+      document.write("Félix nasceu em ", ano - 20);
+      pl();
+      document.write("Amanda nasceu em ", ano - 22);
+      pl();
+      document.write("A média da idade das três pessoas é: ",Math.round(mediaIdade));
+      pl();
+      document.write("A idade de ", nome, " é ", idade);
+    </script>
+  </body>
+</html>
