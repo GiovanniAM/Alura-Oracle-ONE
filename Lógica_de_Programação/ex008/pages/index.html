@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Jogo de Adivinha</title>
+</head>
+<body>
+    <h1>Exercicio aula 6.3</h1>
+    <script>
+        //Global functions
+        function pl(){
+            document.write("<br>");
+}
+        function show(palavras){
+            document.write(palavras);
+            pl();
+}
+        //variaveis
+        numprecerto = Math.random() * 5;
+        numcerto = Math.round(numprecerto);
+        numusu = parseFloat(prompt("Digite seu chute"));
+
+        //script
+        show("o numero era " + numcerto)
+        if(numusu == numcerto){
+            show("Parabéns, você acertou.");
+        }
+        else if(numusu != numcerto){
+            show("Errrooou");
+        }
+        
+    </script>
+</body>
+</html>
