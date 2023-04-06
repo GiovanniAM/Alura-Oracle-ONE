@@ -19,22 +19,21 @@
   <body>
     <h2>Teste de JavaScript2</h2>
     <script>
-      
+      //FUNCTIONS GLOBAIS
       function pl(){
         document.write("<br>");
       };
       function ms(frase){
         document.write(frase);
+        pl();
       };
+      
+      //VARIAVEIS GLOBAIS
+      var ano = 2023;
 
-      var ano = 2023
-
-      ms("Giovanni tem " + (ano - 2005) +  " anos")
-      pl()
-      ms("Flávio tem " + (ano - 2000) +  " anos")
-      pl()
-      ms("Elizberto tem " + (ano - 1988) + " anos")
-      pl()
+      ms("Giovanni tem " + (ano - 2005) +  " anos");
+      ms("Flávio tem " + (ano - 2000) +  " anos");
+      ms("Elizberto tem " + (ano - 1988) + " anos");
     </script>
   </body>
 </html>
