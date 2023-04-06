@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste JS3</title>
+    <link rel="stylesheet" href="../style/global.css">
+</head>
+<body>
+    <h1>TESTE DE JAVASCRIPT</h1>
+    <script>
+        //Global functions
+        function pl(){
+            document.write("<br>");
+        }
+        function show(palavras){
+            document.write(palavras);
+            pl();
+        }
+        function calcimc(peso, altura){
+            var imc = peso / (altura * altura);
+            show(nome + " seu IMC calculado é " + imc);
+        }   
+        //Global Variables
+        nome = prompt("informe seu nome");
+        alturausu = prompt(nome + ", informe sua altura");
+        pesousu = prompt(nome + ", informe seu peso");
+        imc = calcimc(pesousu, alturausu);
+    </script>
+</body>
+</html>
+</body>
+</html>
