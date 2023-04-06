@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6</title>
+    <link rel="stylesheet" href="../style/global.css">
+</head>
+<body>
+    <h1>Futebol Javascript</h1>
+    <script>
+        //Global functions
+        function pl(){
+            document.write("<br>");
+        }
+        function show(palavras){
+            document.write(palavras);
+            pl();
+        }
+        //Global Variables
+        vitorias = parseInt(prompt("Quantidade de vitórias do seu time em numeros"));
+        empates = parseInt(prompt("Quantidade de empates do seu time em numeros"));
+        pontuacao = vitorias * 3 + empates
+
+        //Script
+        show("A pontuação do seu time foi " + pontuacao + " pontos");
+
+        if(pontuacao > 28){
+            show("Seu time foi melhor que ano passado!!");
+        }
+        if(pontuacao < 28){
+            show("Seu time foi pior que ano passado!!");
+        }
+        if(pontuacao == 28){
+            show("Seu time teve a mesma pontuação do ano passado.");
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6</title>
+    <link rel="stylesheet" href="../style/global.css">
+</head>
+<body>
+    <h1>IMC Javascript 6.2</h1>
+    <script>
+        //Global functions
+        function pl(){
+            document.write("<br>");
+        }
+        function show(palavras){
+            document.write(palavras);
+            pl();
+        }
+
+        //Global Variables
+        nome = prompt("Qual o seu nome?");
+        peso = parseFloat(prompt(nome + " Qual sua peso"));
+        altura = parseFloat(prompt(nome + " Qual seu altura"));
+        imc = peso / (altura * altura);
+
+        //Script
+        show("O seu IMC é " + imc);
+        if(imc < 18.5){
+            show("você está com IMC baixo");
+        }
+        if(imc > 35){
+            show("você está com um IMC alto demais");
+        }
+        if(imc >= 18.5 && imc <= 35){
+            show("você está com um IMC bom");
+        }
+    </script>
+</body>
+</html>
