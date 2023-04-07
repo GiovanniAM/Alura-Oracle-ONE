@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ano da copa em JS</title>
+</head>
+<body>
+    <h1>ANO COPA</h1>
+    <script>
+        //Global functions
+        function pl(){
+            document.write("<br>");
+}
+        function show(palavras){
+            document.write(palavras);
+            pl();
+}
+        //global variables
+        anocopa =  1500;
+        limite = parseInt(prompt("Defina o limite"));
+
+        //script    
+        while(anocopa <= limite){
+            show("teve copa em " + anocopa);
+        anocopa = anocopa + 4;    
+        }
+        show("Sem mais resultados possíveis.")
+    </script>
+</body>
+</html>
