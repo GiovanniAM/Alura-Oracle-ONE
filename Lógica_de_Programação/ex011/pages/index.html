@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oracle JS 7.12</title>
+    <link rel="stylesheet" href="../style/global.css">
+</head>
+<body>
+    <main>
+        <h1>Calculo de media de idades</h1>
+        <script>
+            //Global functions
+            function pl(){
+                document.write("<br>");
+        }
+            function show(palavras){
+                document.write(palavras);
+                pl();
+        }
+            //global variables
+            var qmembros = parseInt(prompt("Quantos membros há na sua familia?"));
+            var varmembros = 1;
+            var totalidd = 0;
+            //script
+            while(varmembros <= qmembros){
+                iddmembros = parseInt(prompt("Informe a idade do membro"));
+                totalidd = totalidd + iddmembros;
+                varmembros++;
+            }
+            var mediaidd = totalidd / qmembros;
+            show("A média aproximada das idades de sua família é " + Math.round(mediaidd))
+            show("A média exata das idades de sua família é " + mediaidd);
+        </script>
+    </main>
+</body>
+</html>
