@@ -1,0 +1,24 @@
+.cabecalho__container{
+  display: flex;
+  background-color: var(--cabecalho-cor-bg);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+.cabecalho__lista{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.cabecalho__lista--item{
+  margin-left: 1.25rem;
+  color: var(--lista-cor-item);
+  text-decoration: none;
+}
+.cabecalho__lista--item:hover{
+  text-decoration: underline;
+}
+.cabecalho__navbar .ativo{
+  color: var(--lista-cor-item-ativo);
+  font-weight: bold;
+}
