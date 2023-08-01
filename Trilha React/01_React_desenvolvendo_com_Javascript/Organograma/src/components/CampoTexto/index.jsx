@@ -1,13 +1,15 @@
 import './CampoTexto.css'
 
-const CampoTexto = ()=>{
+const CampoTexto = (props)=>{
+  const placeholder = `Digite o ${props.placeholder}`
   return (
     <div className="campo-texto">
-      <label>Nome</label>
-      <input 
+      <label>{props.label}</label>
+      <input
+      required={props.obrigatorio}
       className="campo-texto" 
       type="text"
-      placeholder='Digite seu nome'
+      placeholder={placeholder}
       />
     </div>
   )

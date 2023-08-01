@@ -1,13 +1,13 @@
 import './App.css'
 import Banner from './components/Banner'
-import CampoTexto from './components/CampoTexto'
+import Formulario from './components/Formulario'
 
 function App() {
   return (
     <>
     <div className='App'>
       <Banner></Banner>
-      <CampoTexto></CampoTexto>
+      <Formulario></Formulario>
     </div>
     </>
   )
